@@ -1,86 +1,87 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cuenta regresiva</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<script src="actions.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cuenta regresiva</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="actions.js"></script>
 </head>
+
 <body onload="loadVideo()">
-
-	<div class="wrap">
-		<header>
-			<div class="container nav">
-				<div class="logo">
-					<img src="img/logo-sochi.png" alt="Logotipo Sochi 2014">
-				</div>
-				<div class="logo">
-					<img src="img/logo-claro-sports.png" at="Logotipo Claro Sports">
-				</div>
-			</div>
-		</header>
-		<div class="banner">
-			<div class="container banner-downtime text-light text-center">
-				<h2>Faltan</h2>
-				<div class="counter text-center">
-					<p id="timer"></p>
-				</div>
-				<div class="separar"></div>
-				<div class="video-container">
-					<div class="video">
-						<div id="video"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="content">
-			<div class="container">
-				<div class="main-title text-center text-light">
-					<h1>Claro Sports en Sochi 2014</h1>
-				</div>
-				<div class="separar"></div>
-				<div class="botonera-youtube">
-					<div onclick="videoYoutube1()" class="btn-img">
-						<div class="circle"><p>Los deportistas latinoamericanos que participan en Sochi 2014.</p></div>
-					</div>
-					<div onclick="videoYoutube2()" class="btn-img">
-						<img src="img/travel-meets-fashion.png" alt="Travel Meets Fashion">
-					</div>
-					<div onclick="videoYoutube3()" class="btn-img">
-						<img src="img/velocidad-riesgo.png" alt="Velodidad Riesgo">
-					</div>
-					<div onclick="videoYoutube4()" class="btn-img">
-						<img src="img/team-latam.png" alt="Team Latam">
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<footer>
-			<div class="container footer text-light">
-				<div class="legal text-center">
-					<p>Aviso de provacidad / Contacto</p>
-				</div>
-				<div class="logo-footer">
-					<img src="img/logo-sochi.png" alt="Logotipo Sochi 2014">
-				</div>
-				<div class="social">
-					<ul>
-						<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-						<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-
-	</div>
-
+    <div class="wrap">
+        <header>
+            <div class="container nav">
+                <div class="logo">
+                    <img src="img/logo-sochi.png" alt="Logotipo Sochi 2014">
+                </div>
+                <div class="logo">
+                    <img src="img/logo-claro-sports.png" at="Logotipo Claro Sports">
+                </div>
+            </div>
+        </header>
+        <div class="banner">
+            <div class="container banner-downtime text-light text-center">
+                <h2>Faltan</h2>
+                <div class="counter text-center">
+                    <p id="timer"></p>
+                </div>
+                <div class="separar"></div>
+                <div class="video-container">
+                    <div class="video">
+                        <div id="video"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="main-title text-center text-light">
+                    <h1>Claro Sports en Sochi 2014</h1>
+                </div>
+                <div class="separar"></div>
+                <div class="botonera-youtube">
+                    <div onclick="videoYoutube1()" class="btn-img">
+                        <div class="circle">
+                            <p>Los deportistas latinoamericanos que participan en Sochi 2014.</p>
+                        </div>
+                    </div>
+                    <div onclick="videoYoutube2()" class="btn-img">
+                        <img src="img/travel-meets-fashion.png" alt="Travel Meets Fashion">
+                    </div>
+                    <div onclick="videoYoutube3()" class="btn-img">
+                        <img src="img/velocidad-riesgo.png" alt="Velodidad Riesgo">
+                    </div>
+                    <div onclick="videoYoutube4()" class="btn-img">
+                        <img src="img/team-latam.png" alt="Team Latam">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container footer text-light">
+                <div class="legal text-center">
+                    <p>Aviso de provacidad / Contacto</p>
+                </div>
+                <div class="logo-footer">
+                    <img src="img/logo-sochi.png" alt="Logotipo Sochi 2014">
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
