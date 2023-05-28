@@ -1,7 +1,7 @@
-// Set the date we're counting down to
+// Set the date
 let countDownDate = new Date("Aug 30, 2023 00:00:00").getTime();
 
-// Update the count down every 1 second
+// Actualizar cada segundo
 let x = setInterval(function() {
 
     // obtener el dia de hoy
@@ -16,10 +16,8 @@ let x = setInterval(function() {
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // id="demo"
     document.getElementById("timer").innerHTML = '<div class="counter"><div class="date"><p>' + days + '<br /><span class="date-name">Días</span></p></div><div class="date"><p>' + hours + ' <br /><span class="date-name">Hrs</span></p></div><div class="date"><p>' + minutes + ' <br /><span class="date-name">Min</span></p></div><div class="date"><p>' + seconds + ' <br /><span class="date-name">Seg</span></p></div></div>';
 
-    // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("timer").innerHTML = "EXPIRED";
